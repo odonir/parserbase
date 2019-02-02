@@ -1,0 +1,33 @@
+﻿<Window x:Class="HabraParser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HabraParser"
+        xmlns:viewModel="clr-namespace:HabraParser.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" ItemsSource="{Binding Path=Publications}" SelectedIndex="{Binding Path=SelectedItem}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path=Item1}"></TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.InputBindings>
+                <MouseBinding MouseAction="LeftDoubleClick" Command="{Binding OpenButtonClickCommand}"></MouseBinding>
+            </ListBox.InputBindings>
+        </ListBox>
+        <StackPanel Grid.Column="1" Orientation="Vertical" Width="100">
+            <Button Content="Открыть" Height="30" Margin="2" Command="{Binding Path=OpenButtonClickCommand}"></Button>
+            <Button Content="Обновить" Height="30" Margin="2" Command="{Binding Path=RefreshButtonClickCommand}"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

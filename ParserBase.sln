@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28527.54
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserBase", "ParserBase\ParserBase.csproj", "{7AB26EA1-B3A9-4462-BB43-8BACF68E161D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HabraParser", "HabraParser\HabraParser.csproj", "{14A8E0EF-C422-420E-B074-B4074241B6E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AB26EA1-B3A9-4462-BB43-8BACF68E161D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB26EA1-B3A9-4462-BB43-8BACF68E161D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB26EA1-B3A9-4462-BB43-8BACF68E161D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB26EA1-B3A9-4462-BB43-8BACF68E161D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A8E0EF-C422-420E-B074-B4074241B6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A8E0EF-C422-420E-B074-B4074241B6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A8E0EF-C422-420E-B074-B4074241B6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A8E0EF-C422-420E-B074-B4074241B6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB460A6B-4DDB-41FA-A3BE-D143621551F8}
+	EndGlobalSection
+EndGlobal
